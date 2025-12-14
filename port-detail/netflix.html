@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/net-style.css" />
+	</head>
+	<body>
+		<!-- 헤더 히어로 영역 -->
+		<header class="hero">
+			<div class="hero-overlay"></div>
+			<div class="hero-inner">
+
+				<!-- 상단 네비게이션 -->
+				<nav class="nav">
+					<h1 class="nav-logo">
+						<svg class="netflix-logo" viewBox="0 0 111 30" xmlns="http://www.w3.org/2000/svg">
+	<path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,0 L99.5313525,0 L102.593495,7.87421502 L105.874965,0 L110.999156,0 L105.06233,14.2806261 Z M90.4686475,0 L85.8749649,0 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,0 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,0 L73.9366389,0 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,0 L66.3436123,0 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,0 L50.2183897,0 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,0 L32.7809542,0 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,0 L4.4690224,0 L10.562377,17.0315868 L10.562377,0 L15.2497891,0 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"/>
+	</svg>
+
+					</h1>
+					<div class="nav-right">
+						<div class="nav-lang">
+							<select>
+								<option>한국어</option>
+								<option>English</option>
+							</select>
+						</div>
+						<a href="#" class="btn btn-small btn-red">로그인</a>
+					</div>
+				</nav>
+
+				<!-- 히어로 텍스트 -->
+				<div class="hero-content">
+					<h2 class="hero-title">
+						영화, 시리즈 등을 
+						<br class="mobile-hide">무제한으로
+					</h2>
+					<p class="hero-subtitle">
+						7,000원으로 시작하세요. 멤버십은 언제든지 해지 가능합니다.
+					</p>
+					<p class="hero-desc">
+						시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
+					</p>
+
+					<form class="hero-form">
+						<div class="input-wrap">
+							<input type="email" class="input-email" placeholder=" " required>
+							<label for="email">이메일 주소
+						</div>
+						<button class="btn btn-red btn-large btn-start" type="submit">시작하기</button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<!-- 곡선포기.. 일단 그냥 선 -->
+		<div class="deco-box">
+			<div class="deco-box-curve"></div>
+		</div>
+		<main>
+			<!-- 띠 배너 -->
+			<section class="plan-banner">
+				<div class="plan-content">
+					<div class="plan-icon">
+					<svg width="96" height="96" fill="none"><path d="M48 95.213c26.51 0 48-3.875 48-8.656 0-4.78-21.49-8.655-48-8.655S0 81.777 0 86.557c0 4.78 21.49 8.656 48 8.656Z" fill="url(#a)"></path><path d="M48 77.115c26.51 0 48-17.087 48-38.164C96 17.873 74.51.787 48 .787S0 17.874 0 38.95s21.49 38.164 48 38.164Z" fill="url(#b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M75.376 75.624a2.36 2.36 0 1 0-2.817 1.408c-.062.157-.107.32-.134.486a3.15 3.15 0 0 0-1.161 4.298 3.146 3.146 0 0 0 4.297 1.161 3.148 3.148 0 0 0 4.927 2.228 2.36 2.36 0 1 0 3.662-2.809 3.148 3.148 0 0 0-4.448-4.447 2.355 2.355 0 0 0-2.67-.669 2.365 2.365 0 0 0-1.656-1.656Zm-50.983 1.49c0 .31-.044.619-.134.915a4.328 4.328 0 1 1-3.256 7.922 2.743 2.743 0 0 1-1.724.606c-.477.001-.946-.123-1.36-.358a1.966 1.966 0 0 1-3.74-.569 2.36 2.36 0 1 1-.013-4.445 3.148 3.148 0 0 1 4.07-3.145 3.148 3.148 0 1 1 6.157-.925Z" fill="url(#c)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M51.934 20.459c0 .388-.07.76-.198 1.102.234.114.452.256.65.422a3.146 3.146 0 0 1 3.102-1.498 3.147 3.147 0 0 1 5.888 1.646 3.154 3.154 0 0 1 1.953 1.498c.783.095 1.501.48 2.013 1.078a3.935 3.935 0 0 1 4.868 5.726c.559.375.983.918 1.212 1.552a3.148 3.148 0 0 1 5.26 3.445 3.147 3.147 0 1 1-3.08 4.701H24.392v-1.208a3.148 3.148 0 0 1-4.346-4.217 3.148 3.148 0 0 1 3.478-5.215 3.142 3.142 0 0 1 2.442-1.164 3.147 3.147 0 0 1 3.554-3.122 3.147 3.147 0 0 1 3.18-1.568 3.147 3.147 0 0 1 4.803-3.954 3.15 3.15 0 0 1 3.238 2.094c.41-.276.88-.45 1.371-.51a3.147 3.147 0 0 1 3.597-1.478 3.148 3.148 0 0 1 6.224.67Z" fill="url(#d)"></path><path opacity="0.6" d="M46.033 36.984a7.475 7.475 0 1 0 0-14.951 7.475 7.475 0 0 0 0 14.95Z" fill="url(#e)"></path><path opacity="0.6" d="M43.672 32.262a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#f)"></path><path opacity="0.6" d="M42.098 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#g)"></path><path opacity="0.6" d="M27.148 38.557a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#h)"></path><path opacity="0.6" d="M30.295 36.197a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#i)"></path><path opacity="0.6" d="M30.295 37.77a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z" fill="url(#j)"></path><path opacity="0.2" d="M73.574 36.197a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z" fill="url(#k)"></path><path opacity="0.2" d="M76.721 39.344a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z" fill="url(#l)"></path><path opacity="0.3" d="M72.787 40.131a3.541 3.541 0 1 0 0-7.082 3.541 3.541 0 0 0 0 7.082Z" fill="url(#m)"></path><path opacity="0.2" d="M58.623 24.393a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z" fill="url(#n)"></path><path opacity="0.2" d="M48.393 21.246a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z" fill="url(#o)"></path><path opacity="0.2" d="M35.016 23.607a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z" fill="url(#p)"></path><path opacity="0.2" d="M61.77 33.05a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#q)"></path><path opacity="0.6" d="M57.05 31.475a5.115 5.115 0 1 0 0-10.229 5.115 5.115 0 0 0 0 10.23Z" fill="url(#r)"></path><path opacity="0.2" d="M59.41 33.836a5.115 5.115 0 1 0 0-10.23 5.115 5.115 0 0 0 0 10.23Z" fill="url(#s)"></path><path d="M18.885 36.984h44.853l-3.935 51.934h-37.77l-3.148-51.934Z" fill="url(#t)"></path><path d="m71.607 85.77-11.804 3.148 3.935-51.934 14.95 3.934-7.081 44.852Z" fill="url(#u)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m46.33 47.333.254-10.35h-9.388l.104 9.84a16.418 16.418 0 0 0-4.664 1.825l-.327-11.664h-9.407l2.927 51.934h7.943l-.317-11.22a16.431 16.431 0 0 0 4.187 1.453l.105 9.767h7.558l.25-10.101a16.449 16.449 0 0 0 3.675-1.58l-.37 11.681h8.321l2.741-51.934h-9.417l-.388 12.237a16.47 16.47 0 0 0-3.788-1.888Zm16.078 40.89 2.95-.786 5.845-48.488-4.501-1.186-4.294 50.46Zm4.63-1.234 2.317-.618 7.838-45.846-4.375-1.152-5.78 47.616ZM53.507 62.95c0 6.953-5.636 12.59-12.59 12.59s-12.59-5.636-12.59-12.59 5.636-12.59 12.59-12.59 12.59 5.636 12.59 12.59Zm-7.172 6.795L44.64 64.26l4.108-3.047a.39.39 0 0 0-.2-.702 93.591 93.591 0 0 0-5.184-.274l-2.076-5.712a.394.394 0 0 0-.74 0l-2.076 5.712c-1.76.044-3.49.137-5.185.274a.39.39 0 0 0-.198.702l4.107 3.046-1.696 5.485a.394.394 0 0 0 .598.442l4.82-3.281 4.82 3.281a.394.394 0 0 0 .599-.441h-.001Z" fill="url(#v)"></path><path opacity="0.4" d="M16.918 82.623a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z" fill="url(#w)"></path><path opacity="0.4" d="M13.77 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z" fill="url(#x)"></path><path opacity="0.4" d="M16.131 84.984a1.967 1.967 0 1 0 0-3.935 1.967 1.967 0 0 0 0 3.935Z" fill="url(#y)"></path><path opacity="0.4" d="M19.279 86.557a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z" fill="url(#z)"></path><path opacity="0.4" d="M82.23 85.77a1.967 1.967 0 1 0 0-3.934 1.967 1.967 0 0 0 0 3.934Z" fill="url(#A)"></path><path opacity="0.4" d="M81.836 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z" fill="url(#B)"></path><path opacity="0.4" d="M77.902 82.623a2.36 2.36 0 1 0 0-4.721 2.36 2.36 0 0 0 0 4.721Z" fill="url(#C)"></path><path opacity="0.4" d="M75.147 81.836a2.754 2.754 0 1 0 0-5.508 2.754 2.754 0 0 0 0 5.508Z" fill="url(#D)"></path><path opacity="0.4" d="M18.492 84.984a2.754 2.754 0 1 0 0-5.509 2.754 2.754 0 0 0 0 5.509Z" fill="url(#E)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M73.967 79.475a2.361 2.361 0 0 1 2.36 2.361 3.148 3.148 0 1 1-.88 6.17 2.36 2.36 0 0 1-4.613-.92 2.755 2.755 0 0 1 .773-5.222v-.028a2.36 2.36 0 0 1 2.36-2.36Z" fill="url(#F)"></path><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -8.70201 48.2567 0 48 86.604)"><stop offset="0.286" stop-color="#7D2889"></stop><stop offset="0.724" stop-color="#FF66D9" stop-opacity="0.41"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></radialGradient><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -38.3681 48.2567 0 48 39.155)"><stop stop-color="#FFCA45"></stop><stop offset="0.453" stop-color="#FF66D9" stop-opacity="0.36"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></radialGradient><radialGradient id="c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(180 23.41 39.738) scale(37.7705)"><stop offset="0.432" stop-color="#FF8B54"></stop><stop offset="0.76" stop-color="#FFBB8D"></stop><stop offset="1" stop-color="#F9DDD1"></stop></radialGradient><radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -10.623 28.257 0 47.607 27.934)"><stop offset="0.302" stop-color="#F9DDD1"></stop><stop offset="0.674" stop-color="#FFBB8D"></stop><stop offset="1" stop-color="#FF8B54"></stop></radialGradient><radialGradient id="e" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 8.042 37.99) scale(7.03568)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="f" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 8.112 35.56) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 5.358 36.74) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="h" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -3.298 30.445) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="i" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -.544 30.839) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="j" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -2.442 32.737) scale(2.59209)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="k" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 19.985 53.59) scale(2.59209)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="l" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 19.614 57.107) scale(1.85149)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="m" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 17.994 54.792) scale(3.33269)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="n" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 18.41 40.212) scale(2.59209)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="o" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 14.5 33.894) scale(1.8515)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="p" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 6.63 28.386) scale(1.85149)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="q" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 16.768 45.003) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 15.194 41.855) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="s" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 15.194 44.216) scale(4.81389)"><stop offset="0.375" stop-color="#FFF4EB"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="w" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -31.927 48.845) scale(1.8515)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="x" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -34.681 48.452) scale(1.8515)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="y" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -33.5 49.632) scale(1.8515)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="z" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -32.714 51.993) scale(1.85149)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="A" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -.845 83.075) scale(1.85149)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="B" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 .718 81.118) scale(2.2218)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="C" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -1.25 79.151) scale(2.2218)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="D" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -2.048 77.196) scale(2.5921)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="E" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -31.95 50.442) scale(2.5921)"><stop offset="0.375" stop-color="#F9DDD1"></stop><stop offset="1" stop-color="#FFF3EB" stop-opacity="0"></stop></radialGradient><radialGradient id="F" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(111.038 9.116 68.506) scale(5.48002)"><stop stop-color="#FDF7F2"></stop><stop offset="1" stop-color="#FFD8BD"></stop></radialGradient><linearGradient id="t" x1="59.803" y1="88.918" x2="33.764" y2="21.046" gradientUnits="userSpaceOnUse"><stop stop-color="#E0B1CC"></stop><stop offset="0.431" stop-color="#FFF1F1"></stop><stop offset="1" stop-color="#FFC9A5"></stop></linearGradient><linearGradient id="u" x1="59.803" y1="53.115" x2="83.41" y2="53.115" gradientUnits="userSpaceOnUse"><stop stop-color="#D16AE9"></stop><stop offset="1" stop-color="#FF661D"></stop></linearGradient><linearGradient id="v" x1="18.111" y1="36.984" x2="75.136" y2="85.621" gradientUnits="userSpaceOnUse"><stop stop-color="#FF661D"></stop><stop offset="0.5" stop-color="#CE3A00"></stop><stop offset="1" stop-color="#A60A5E"></stop></linearGradient></defs>
+					</svg>
+				</div>
+				</div>
+				<div class="plan-inner">
+					<div class="plan-left">
+						<div class="plan-text-wrap">
+							<p class="plan-title">7,000원이면 만날 수 있는 넷플릭스.</p>
+							<p class="plan-text">가장 경제적인 광고형 멤버십을 이용해 보세요.</p>
+						</div>
+					</div>
+					<a href="#" class="btn btn-small plan-btn">자세히 알아보기</a>
+				</div>
+			</section>
+
+			<!-- 지금 뜨는 콘텐츠 -->
+			<section class="section">
+				<div class="section-inner">
+					<h3 class="section-title">지금 뜨는 콘텐츠</h3>
+					<div class="trending-list">
+						<article class="trend-card">
+							<div class="trend-rank">1</div>
+							<img src="https://occ-0-8158-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABR9hDFvCicolGmZ9t0lxUpMPg-Twsgd6EV2rYlYljw6KlRdllaBzoX84XkNszjEYe-f-rFazBhbu5y4yjKx-4U0Qifu6SQf8geY.webp?r=2ee" alt="콘텐츠1">
+						</article>
+						<article class="trend-card">
+							<div class="trend-rank">2</div>
+							<img src="https://occ-0-8158-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRu_TqPrCCmgqZPRgJGjGUaVYqTehNmR-c4mW5du-BAetkoBXOS7pTOhD6-ptISo5ZWhfXAsPGZ2FxnuQry9xqXS9GADRvG9bABFipvWgA86wgRZUDWLXjc9xFaOcmLwKogj.webp?r=ca2" alt="콘텐츠2">
+						</article>
+						<article class="trend-card">
+							<div class="trend-rank">3</div>
+							<img src="https://occ-0-8158-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTvnK49K1I_Jzftnb6bg_yz_nWhVDRHGTkbbsXCfdKjDbL78THLtkewWANaxCLZTQNMouh8-AX92C8f84aqrWwCXeSkiRPHF4SlfTy7blcerz11cHzKieDrfdtC-qIIO3p-n.webp?r=a28" alt="콘텐츠3">
+						</article>
+						<article class="trend-card">
+							<div class="trend-rank">4</div>
+							<img src="https://occ-0-8158-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTwJgf8mb-32FD-pMCGO7nMcr78xu37IJY6KHV0KLFzAln1P7s6BNMm5tiE3Md8NvwEt7IoeteDmMi2nnkvEeKDWaqmSPXvGhOA0nDf6_N3atNydyppeL-rOquD9kJEFaxsX.webp?r=14d" alt="콘텐츠4">
+						</article>
+						<article class="trend-card">
+							<div class="trend-rank">5</div>
+							<img src="https://occ-0-8158-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYvjo2RvaYII9prfhGUCM_Y5zl1ctQLnrbJGNANBisaqubzdp3KZdj94bNWeh7E7ludz4RIr8Ridsv6QzbfDCPzf9v1HHxVJhR268IhM0mdMGnmQy2duyDQWEaOe14WdC13P.webp?r=a00" alt="콘텐츠5">
+						</article>
+						<div class="slider-arrow-wrap">
+							<button class="slider-arrow right-arrow">
+								<svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+									<path fill="currentColor" fill-rule="evenodd"
+												d="m15.59 12-7.3 7.3 1.42 1.4 8-8a1 1 0 0 0 0-1.4l-8-8-1.42 1.4z"
+												clip-rule="evenodd" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 가입해야 하는 또 다른 이유 -->
+			<section class="section">
+				<div class="section-inner">
+					<h3 class="section-title">가입해야 하는 또 다른 이유</h3>
+
+					<div class="features">
+						<article class="feature-card">
+							<div class="feature-content">
+								<h3>TV로 즐기세요</h3>
+									<p>
+										스마트 TV, PlayStation, Xbox, Chromecast, Apple TV 등 다양한
+										기기에서 시청하세요.
+									</p>
+								</div>
+							<div class="feature-icon">
+								<svg width="72" height="72" viewBox="0 0 72 72" fill="none"><g id="television-core-small"><path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M37.2 53.3992C37.2 52.7365 36.6628 52.1992 36 52.1992H34.8C34.1373 52.1992 33.6 52.7365 33.6 53.3992V56.2636C33.6 56.9129 33.0834 57.4433 32.4347 57.4739C30.3013 57.5744 28.1719 57.7834 26.0546 58.1011L19.444 59.0926C18.2692 59.2688 17.4 60.2782 17.4 61.4662V62.0992C17.4 62.4304 17.6686 62.6992 18 62.6992H52.8C53.1314 62.6992 53.4 62.4304 53.4 62.0992V61.4662C53.4 60.2782 52.5309 59.2688 51.3561 59.0926L44.7454 58.1011C42.6282 57.7834 40.4987 57.5744 38.3653 57.4739C37.7167 57.4433 37.2 56.9129 37.2 56.2636V53.3992Z" fill="url(#paint0_radial_5179_1308)"></path><path id="Vector_2" d="M18.6 60.7388C18.6 60.2306 18.9587 59.796 19.4602 59.711C22.0196 59.2775 29.7585 58.0508 35.4 58.0508C41.0415 58.0508 48.7804 59.2775 51.3398 59.711C51.8412 59.796 52.2 60.2306 52.2 60.7388C52.2 60.902 52.0575 61.0268 51.8967 61.0004C50.1219 60.707 40.9704 59.2409 35.4 59.2409C29.8295 59.2409 20.678 60.707 18.9033 61.0004C18.7425 61.0268 18.6 60.902 18.6 60.7388Z" fill="url(#paint1_radial_5179_1308)"></path><path id="Vector_3" d="M63 12H8.99995C8.00584 12 7.19995 12.8059 7.19995 13.8V51.6C7.19995 52.5941 8.00584 53.4 8.99995 53.4H63C63.9941 53.4 64.8 52.5941 64.8 51.6V13.8C64.8 12.8059 63.9941 12 63 12Z" fill="url(#paint2_linear_5179_1308)"></path><path id="Vector_4" d="M63 12H8.99995C8.00584 12 7.19995 12.8059 7.19995 13.8V51.6C7.19995 52.5941 8.00584 53.4 8.99995 53.4H63C63.9941 53.4 64.8 52.5941 64.8 51.6V13.8C64.8 12.8059 63.9941 12 63 12Z" fill="url(#paint3_radial_5179_1308)"></path><path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M8.99995 12.6H63C63.663 12.6 64.2 13.1372 64.2 13.8V50.4H7.79995V13.8C7.79995 13.1372 8.33719 12.6 8.99995 12.6ZM7.19995 50.4V13.8C7.19995 12.8059 8.00581 12 8.99995 12H63C63.9942 12 64.8 12.8059 64.8 13.8V50.4V51.6C64.8 52.5941 63.9942 53.4 63 53.4H8.99995C8.00581 53.4 7.19995 52.5941 7.19995 51.6V50.4Z" fill="url(#paint4_radial_5179_1308)"></path><path id="Vector_6" d="M35.4 52.8C36.3941 52.8 37.2 52.3971 37.2 51.9C37.2 51.4029 36.3941 51 35.4 51C34.4059 51 33.6 51.4029 33.6 51.9C33.6 52.3971 34.4059 52.8 35.4 52.8Z" fill="url(#paint5_radial_5179_1308)"></path></g><defs><radialGradient id="paint0_radial_5179_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.3269 49.3723) rotate(118.526) scale(55.1579 46.2871)"><stop stop-color="#802600"></stop><stop offset="0.333333" stop-color="#6F181D"></stop><stop offset="0.666667" stop-color="#5B1333"></stop><stop offset="1" stop-color="#391945"></stop></radialGradient><radialGradient id="paint1_radial_5179_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48.1077 53.6128) rotate(158.116) scale(32.7275 42.219)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><linearGradient id="paint2_linear_5179_1308" x1="10.4727" y1="14.9572" x2="56.1755" y2="51.4814" gradientUnits="userSpaceOnUse"><stop stop-color="#99161D"></stop><stop offset="0.245283" stop-color="#CA005B"></stop><stop offset="0.346698" stop-color="#FF479A"></stop><stop offset="0.46934" stop-color="#CC3CFF"></stop><stop offset="0.735849" stop-color="#BC1A22"></stop><stop offset="1" stop-color="#C94FF5"></stop></linearGradient><radialGradient id="paint3_radial_5179_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38.6181 23.8286) rotate(90) scale(25.9571 25.8545)"><stop stop-color="#1C0E20" stop-opacity="0"></stop><stop offset="1" stop-color="#1C0E20"></stop></radialGradient><radialGradient id="paint4_radial_5179_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 20.1938) rotate(144.293) scale(47.2897 44.8232)"><stop stop-color="#EF7744"></stop><stop offset="0.333333" stop-color="#E50914"></stop><stop offset="0.666667" stop-color="#A70D53"></stop><stop offset="1" stop-color="#792A95"></stop></radialGradient><radialGradient id="paint5_radial_5179_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.525 51.3562) rotate(135) scale(4.58735)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FFBDC0"></stop><stop offset="0.666667" stop-color="#F89DC6"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient></defs></svg>
+							</div>
+						</article>
+						<article class="feature-card">
+							<div class="feature-content">
+								<h3>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요</h3>
+								<p>
+									간편하게 저장하고 빈틈없이 즐겨보세요.
+								</p>
+							</div>
+							<div class="feature-icon">
+								<svg width="72" height="72" viewBox="0 0 72 72" fill="none"><g id="download-core-small"><path id="Vector" d="M36 70.2008C54.8882 70.2008 70.2001 54.8889 70.2001 36.0008C70.2001 17.1126 54.8882 1.80078 36 1.80078C17.1119 1.80078 1.80005 17.1126 1.80005 36.0008C1.80005 54.8889 17.1119 70.2008 36 70.2008Z" fill="url(#paint0_radial_5179_7940)"></path><path id="Vector_2" opacity="0.4" d="M64.7658 36.195C65.5206 51.5916 53.7908 63.5824 38.5668 62.977C23.3428 62.3722 10.3893 49.4 9.63446 34.0034C8.87954 18.6068 20.6091 6.61594 35.8331 7.22116C51.0571 7.82638 64.0104 20.7984 64.7658 36.195Z" fill="url(#paint1_radial_5179_7940)"></path><path id="Vector_3" d="M62.3657 37.9958C63.1205 53.3924 51.3908 65.3832 36.1668 64.7778C20.9428 64.173 7.9893 51.2008 7.23444 35.8041C6.47952 20.4075 18.2091 8.41672 33.4331 9.02194C48.6571 9.62716 61.6103 22.5992 62.3657 37.9958Z" fill="url(#paint2_radial_5179_7940)"></path><path id="Vector_4" opacity="0.5" d="M64.7658 36.195C65.5206 51.5916 53.7908 63.5824 38.5668 62.977C23.3428 62.3722 10.3893 49.4 9.63446 34.0034C8.87954 18.6068 20.6091 6.61594 35.8331 7.22116C51.0571 7.82638 64.0104 20.7984 64.7658 36.195Z" fill="url(#paint3_radial_5179_7940)"></path><path id="Vector_5" opacity="0.6" d="M36.9 60.6C48.6636 60.6 58.2 51.0637 58.2 39.3C58.2 27.5363 48.6636 18 36.9 18C25.1363 18 15.6 27.5363 15.6 39.3C15.6 51.0637 25.1363 60.6 36.9 60.6Z" fill="url(#paint4_radial_5179_7940)"></path><path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M39.0849 42.2727L46.3387 35.76L48.8945 38.5142L38.9118 47.477L37.8466 48.4333L36.6071 47.477L24.9899 38.5142L27.0434 35.76L35.4849 42.2727L33.6 21.6016H37.2L39.0849 42.2727Z" fill="url(#paint5_radial_5179_7940)"></path><path id="Vector_7" opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M61.6566 34.9618C61.7832 35.3893 62.391 35.3233 62.3694 34.878C61.6962 21.1369 50.1509 9.55975 36.5817 9.01957C34.4606 8.93515 32.4155 9.12541 30.4772 9.55909C30.0745 9.64915 30.1575 10.2082 30.5697 10.2246C45.0094 10.7979 57.6246 21.2971 61.6566 34.9618Z" fill="url(#paint6_radial_5179_7940)"></path></g><defs><radialGradient id="paint0_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.0001 36.1837) rotate(-90) scale(34.3829)"><stop offset="0.782019" stop-color="#982DBE"></stop><stop offset="0.906819" stop-color="#B038DC" stop-opacity="0.2"></stop><stop offset="1" stop-color="#E4A1FA" stop-opacity="0"></stop></radialGradient><radialGradient id="paint1_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.9937 20.0992) rotate(135) scale(49.9836)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FFBDC0"></stop><stop offset="0.666667" stop-color="#F89DC6"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint2_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.7999 19.6937) rotate(135) scale(53.1037)"><stop stop-color="#FFA984"></stop><stop offset="0.333333" stop-color="#FF787F"></stop><stop offset="0.666667" stop-color="#F45FA2"></stop><stop offset="1" stop-color="#C44AF1"></stop></radialGradient><radialGradient id="paint3_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.9937 20.0992) rotate(135) scale(49.9836)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FFBDC0"></stop><stop offset="0.666667" stop-color="#F89DC6"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint4_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.9 39.3) scale(21.3)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint5_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(31.2 32.1016) rotate(39.5226) scale(15.5567)"><stop stop-color="#EF7744"></stop><stop offset="0.2406" stop-color="#E50914"></stop><stop offset="1" stop-color="#792A95"></stop></radialGradient><radialGradient id="paint6_radial_5179_7940" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.7 21.3) rotate(-180) scale(30)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient></defs></svg>
+							</div>
+						</article>
+						<article class="feature-card">
+							<div class="feature-content">
+								<h3>다양한 디바이스로 시청하세요</h3>
+								<p>
+									각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요.
+								</p>
+							</div>
+							<div class="feature-icon">
+								<svg width="72" height="72" viewBox="0 0 72 72" fill="none"><g id="telescope-core-small"><path id="Vector" d="M24.0492 36.6016L33.6 46.3898L17.8029 56.8633C17.8029 56.8633 15.8891 57.6983 13.625 55.2638C11.361 52.8293 12.1235 51.238 12.1235 51.238L24.0492 36.6016Z" fill="url(#paint0_radial_5179_1664)"></path><path id="Vector_2" d="M25.0344 34.1992L36 46.151L25.0616 53.8043C25.0616 53.8043 21.8289 55.0984 18.0987 51.0172C14.3686 46.9358 15.9198 44.5105 15.9198 44.5105L25.0344 34.1992Z" fill="url(#paint1_radial_5179_1664)"></path><path id="Vector_3" d="M39 13.0195L59.1 33.6788L32.5325 50.4142C32.5325 50.4142 28.7459 50.2552 24.3978 45.4897C20.0498 40.7243 21.4096 35.8101 21.4096 35.8101L39 13.0195Z" fill="url(#paint2_radial_5179_1664)"></path><path id="Vector_4" d="M57.6709 15.3516C63.1044 21.2807 63.9858 29.2883 59.6386 33.2371C55.2916 37.186 47.3628 35.5806 41.9292 29.6515C36.4954 23.7224 35.6145 15.7148 39.9615 11.766C44.3084 7.81716 52.2372 9.42252 57.6709 15.3516Z" fill="url(#paint3_radial_5179_1664)"></path><path id="Vector_5" d="M58.3787 31.255C54.8121 34.5032 48.2143 33.0817 43.6421 28.0798C39.07 23.078 38.2547 16.39 41.8213 13.1419C45.3879 9.89364 51.9857 11.3152 56.5579 16.3171C61.1298 21.3189 61.9452 28.0069 58.3787 31.255Z" fill="url(#paint4_radial_5179_1664)"></path><path id="Vector_6" opacity="0.85" d="M59.6783 28.823C60.576 24.1785 59.6544 20.5934 56.1603 16.6199C52.6662 12.6464 47.3508 10.8657 43.7796 12.7598C39.371 15.098 48.3734 13.5961 53.4577 19.5815C57.8259 24.724 58.8516 33.1009 59.6783 28.823Z" fill="url(#paint5_radial_5179_1664)"></path><path id="Vector_7" opacity="0.4" d="M50.3979 25.2452C50.4549 26.7239 49.2932 27.7677 47.8032 27.5766C46.3131 27.3856 45.059 26.032 45.002 24.5532C44.945 23.0745 46.1067 22.0307 47.5968 22.2218C49.0868 22.4128 50.341 23.7664 50.3979 25.2452Z" fill="url(#paint6_radial_5179_1664)"></path><path id="Vector_8" opacity="0.6" d="M36.9217 21.0039L26.4258 34.3627C26.3297 36.4604 28.2903 39.5534 30.0334 40.8344L41.2345 29.9105C39.6 28.2005 36.9591 24.1025 36.9217 21.0039Z" fill="url(#paint7_radial_5179_1664)"></path><path id="Vector_9" fill-rule="evenodd" clip-rule="evenodd" d="M20.0576 9.60156L21.479 11.7187L24 11.0654L22.3575 13.0272L23.7789 15.1444L21.3424 14.2397L19.7 16.2016L19.8365 13.6806L17.4 12.7759L19.9209 12.1225L20.0576 9.60156ZM58.776 52.8016L58.9623 56.4685L62.4 57.4188L59.0774 58.7347L59.2637 62.4016L57.0239 59.548L53.7014 60.8638L55.6397 57.7843L53.4 54.9307L56.8377 55.8811L58.776 52.8016ZM15.206 24.2101L15.8768 21.0016L13.4793 23.1964L10.6853 21.5563L11.9975 24.553L9.59998 26.7478L12.8085 26.405L14.1207 29.4016L14.7915 26.1931L18 25.8502L15.206 24.2101Z" fill="url(#paint8_linear_5179_1664)"></path></g><defs><radialGradient id="paint0_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.6875 32.7016) rotate(135) scale(34.9134)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint1_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42.5937 27.2992) rotate(135) scale(44.5477 44.5279)"><stop stop-color="#EF7744"></stop><stop offset="0.333333" stop-color="#E50914"></stop><stop offset="0.666667" stop-color="#A70D53"></stop><stop offset="1" stop-color="#792A95"></stop></radialGradient><radialGradient id="paint2_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(42.3 29.106) rotate(135) scale(31.8127)"><stop stop-color="#FB540D"></stop><stop offset="0.333333" stop-color="#E50914"></stop><stop offset="0.666667" stop-color="#A70D53"></stop><stop offset="1" stop-color="#792A95"></stop></radialGradient><radialGradient id="paint3_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(57.675 14.7078) rotate(134.326) scale(24.0433 24.0367)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FFBDC0"></stop><stop offset="0.666667" stop-color="#F89DC6"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint4_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.1305 21.273) rotate(141.875) scale(9.87138 12.8159)"><stop offset="0.307292" stop-color="#F89DC6"></stop><stop offset="0.645392" stop-color="#E75094"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint5_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(55.8 15.6) rotate(135) scale(13.1522)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint6_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(49.2362 22.9648) rotate(131.079) scale(5.08644 6.006)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint7_radial_5179_1664" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.8758 29.1353) rotate(137.622) scale(13.5764)"><stop stop-color="#FFA984"></stop><stop offset="1" stop-color="#F7636B" stop-opacity="0"></stop></radialGradient><linearGradient id="paint8_linear_5179_1664" x1="44.65" y1="27.9016" x2="24.25" y2="48.3016" gradientUnits="userSpaceOnUse"><stop stop-color="#EF7744"></stop><stop offset="0.333333" stop-color="#E50914"></stop><stop offset="0.666667" stop-color="#A70D53"></stop><stop offset="1" stop-color="#792A95"></stop></linearGradient></defs></svg>
+							</div>
+						</article>
+						<article class="feature-card">
+							<div class="feature-content">
+								<h3>어린이 전용 프로필을 만들어 보세요</h3>
+								<p>
+									자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.
+								</p>
+							</div>
+							<div class="feature-icon">
+								<svg width="72" height="72" viewBox="0 0 72 72" fill="none"><g id="profiles-core-small"><path id="Vector" d="M10.8 15.6008C10.8 12.9499 12.949 10.8008 15.5999 10.8008H40.8C43.4509 10.8008 45.6 12.9498 45.6 15.6008V40.8007C45.6 43.4516 43.4509 45.6007 40.8 45.6007H15.6C12.949 45.6007 10.8 43.4517 10.8 40.8007V15.6008Z" fill="url(#paint0_radial_5179_7919)"></path><path id="Vector_2" d="M9.59998 14.4016C9.59998 11.7506 11.749 9.60162 14.4 9.60156H39.6C42.251 9.60156 44.4 11.7506 44.4 14.4016V39.6015C44.4 42.2525 42.251 44.4015 39.6 44.4015H14.4C11.749 44.4016 9.59998 42.2525 9.59998 39.6015V14.4016Z" fill="url(#paint1_radial_5179_7919)"></path><path id="Vector_3" d="M18.6 21.9008C18.6 23.0606 17.6598 24.0008 16.5 24.0008C15.3402 24.0008 14.4 23.0606 14.4 21.9008C14.4 20.741 15.3402 19.8008 16.5 19.8008C17.6598 19.8008 18.6 20.741 18.6 21.9008Z" fill="url(#paint2_radial_5179_7919)"></path><path id="Vector_4" d="M39.6 21.9008C39.6 23.0606 38.6598 24.0008 37.5 24.0008C36.3402 24.0008 35.4 23.0606 35.4 21.9008C35.4 20.741 36.3402 19.8008 37.5 19.8008C38.6598 19.8008 39.6 20.741 39.6 21.9008Z" fill="url(#paint3_radial_5179_7919)"></path><path id="Vector_5" d="M23.6713 29.4501C23.2437 29.1967 22.6917 29.3379 22.4383 29.7655C22.1848 30.1932 22.3261 30.7452 22.7537 30.9986C23.8254 31.6337 26.769 32.7744 30.6375 32.7744C34.506 32.7744 37.4497 31.6337 38.5213 30.9986C38.949 30.7452 39.0902 30.1932 38.8368 29.7655C38.5834 29.3379 38.0313 29.1967 37.6037 29.4501C36.8191 29.9151 34.194 30.9744 30.6375 30.9744C27.081 30.9744 24.456 29.9151 23.6713 29.4501Z" fill="url(#paint4_radial_5179_7919)"></path><path id="Vector_6" opacity="0.35" d="M19.2 44.4016H28.2L32.4 27.6016C30.2787 28.1801 28.4542 29.5387 27.2921 31.4053L19.2 44.4016Z" fill="url(#paint5_radial_5179_7919)"></path><path id="Vector_7" d="M27.6 32.4016C27.6 29.7506 29.749 27.6016 32.4 27.6016L57.6 27.6016C60.2508 27.6016 62.4 29.7506 62.4 32.4016V57.6015C62.4 60.2524 60.2508 62.4016 57.6 62.4016H32.4C29.749 62.4016 27.6 60.2524 27.6 57.6016V32.4016Z" fill="url(#paint6_radial_5179_7919)"></path><path id="Vector_8" d="M36.6 39.9008C36.6 41.0606 35.6598 42.0008 34.5 42.0008C33.3402 42.0008 32.4 41.0606 32.4 39.9008C32.4 38.741 33.3402 37.8008 34.5 37.8008C35.6598 37.8008 36.6 38.741 36.6 39.9008Z" fill="url(#paint7_radial_5179_7919)"></path><path id="Vector_9" d="M57.6 39.9008C57.6 41.0606 56.6598 42.0008 55.5 42.0008C54.3402 42.0008 53.4 41.0606 53.4 39.9008C53.4 38.741 54.3402 37.8008 55.5 37.8008C56.6598 37.8008 57.6 38.741 57.6 39.9008Z" fill="url(#paint8_radial_5179_7919)"></path><path id="Vector_10" d="M41.8213 47.6025C41.3937 47.349 40.8416 47.4903 40.5882 47.9179C40.3348 48.3455 40.476 48.8976 40.9037 49.1509C41.9753 49.786 44.919 50.9267 48.7875 50.9267C52.656 50.9267 55.5996 49.786 56.6713 49.1509C57.0989 48.8976 57.2402 48.3455 56.9867 47.9179C56.7333 47.4903 56.1813 47.349 55.7537 47.6025C54.969 48.0674 52.344 49.1267 48.7875 49.1267C45.231 49.1267 42.6059 48.0674 41.8213 47.6025Z" fill="url(#paint9_radial_5179_7919)"></path></g><defs><radialGradient id="paint0_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.075 17.6882) rotate(135) scale(32.8097)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint1_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.4 8.70157) rotate(133.87) scale(75.3216)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FFBDC0"></stop><stop offset="0.666667" stop-color="#F89DC6"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint2_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.3 11.1008) rotate(133.939) scale(68.7426 55.9547)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint3_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.3 11.1008) rotate(133.939) scale(68.7426 55.9547)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint4_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.3 11.0994) rotate(133.939) scale(68.7426 55.9548)"><stop stop-color="#99421D"></stop><stop offset="0.333333" stop-color="#99161D"></stop><stop offset="0.666667" stop-color="#7D1845"></stop><stop offset="1" stop-color="#59216E"></stop></radialGradient><radialGradient id="paint5_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.6 27.9016) rotate(135) scale(23.3345)"><stop stop-color="#FFA984"></stop><stop offset="0.333333" stop-color="#FF787F"></stop><stop offset="0.666667" stop-color="#F45FA2"></stop><stop offset="1" stop-color="#C44AF1"></stop></radialGradient><radialGradient id="paint6_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61.8 29.7016) rotate(135) scale(43.2749)"><stop stop-color="#EF7744"></stop><stop offset="0.333333" stop-color="#E50914"></stop><stop offset="0.666667" stop-color="#A70D53"></stop><stop offset="1" stop-color="#792A95"></stop></radialGradient><radialGradient id="paint7_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.1 11.1008) rotate(137.146) scale(73.6614 60.3576)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FDF6F6"></stop><stop offset="0.666667" stop-color="#FADCE9"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint8_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.1 11.1008) rotate(137.146) scale(73.6614 60.3576)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FDF6F6"></stop><stop offset="0.666667" stop-color="#FADCE9"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient><radialGradient id="paint9_radial_5179_7919" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.1 11.1017) rotate(137.146) scale(73.6614 60.3576)"><stop stop-color="#FFDCCC"></stop><stop offset="0.333333" stop-color="#FDF6F6"></stop><stop offset="0.666667" stop-color="#FADCE9"></stop><stop offset="1" stop-color="#E4A1FA"></stop></radialGradient></defs></svg>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- 자주 묻는 질문 -->
+			<section class="section faq-section">
+				<div class="section-inner">
+					<h3 class="section-title">자주 묻는 질문</h3>
+
+					<div class="faq-list">
+						<details class="faq-item">
+							<summary>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</summary>
+							<p>넷플릭스는 장편 영화, 다큐멘터리, 시리즈, 애니메이션, 각종 상을 수상한 넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수 있습니다.
+								<a href="https://www.netflix.com/kr/browse/genre/839338"><span>넷플릭스 콘텐츠를 한번 살펴보세요.</span></a>
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>넷플릭스란 무엇인가요?</summary>
+							<p>
+								넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+								<span>저렴한 월 요금으로 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.</span>
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>넷플릭스 요금은 얼마인가요?</summary>
+							<p>
+								스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 월 요금은 7,000원부터 17,000원까지 다양합니다.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>어디에서 시청할 수 있나요?</summary>
+							<p>
+								언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.
+								<span>iOS 또는 Android용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</span>
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>멤버십을 해지하려면 어떻게 하나요?</summary>
+							<p>
+								넷플릭스는 부담 없이 간편합니다. 멤버십 해지도 온라인에서 클릭 두 번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을 시작하거나 종료하세요.
+							</p>
+						</details>
+
+						<details class="faq-item">
+							<summary>아이들이 넷플릭스를 봐도 좋을까요?</summary>
+							<p>
+								멤버십에 넷플릭스 키즈 환경이 포함되어 있어 자녀가 자기만의 공간에서 가족용 시리즈와 영화를 즐기는 동안 부모가 이를 관리할 수 있습니다.
+								<span>키즈 프로필과 더불어 PIN 번호를 이용한 자녀 보호 기능도 있어, 자녀가 시청할 수 있는 콘텐츠의 관람등급을 제한하고 자녀의 시청을 원치 않는 특정 작품을 차단할 수도 있습니다.</span>
+							</p>
+						</details>
+					</div>
+
+					<!-- 푸터 이메일 입력 영역 -->
+					<div class="faq-bottom">
+						<p class="faq-bottom-text">
+							시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일
+							주소를 입력하세요.
+						</p>
+						<form class="hero-form hero-form--center">
+							<div class="input-wrap">
+								<input type="email" class="input-email" placeholder=" ">
+								<label for="email">이메일 주소</label>
+							</div>
+							<button class="btn btn-red btn-large" type="submit">시작하기 &gt;</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- 푸터 -->
+		<footer class="footer">
+			<div class="footer-inner">
+				<p class="footer-question">
+					질문이 있으신가요? 문의 전화: <a href="tel:00-308-321-0161">00-308-321-0161 (수신자 부담)</a>
+				</p>
+
+				<div class="footer-links">
+					<ul>
+						<li><a href="#">자주 묻는 질문</a></li>
+						<li><a href="#">투자 정보(IR)</a></li>
+						<li><a href="#">개인정보 처리방침</a></li>
+						<li><a href="#">속도 테스트</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">고객 센터</a></li>
+						<li><a href="#">입사 정보</a></li>
+						<li><a href="#">쿠키 설정</a></li>
+						<li><a href="#">법적 고지</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">계정</a></li>
+						<li><a href="#">넷플릭스 지원 디바이스</a></li>
+						<li><a href="#">회사 정보</a></li>
+						<li><a href="#">오직 넷플릭스에서</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">미디어 센터</a></li>
+						<li><a href="#">이용 약관</a></li>
+						<li><a href="#">문의하기</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-lang">
+					<select>
+						<option>한국어</option>
+						<option>English</option>
+					</select>
+				</div>
+
+				<div class="footer-copy">
+					<p>넷플릭스 대한민국</p>
+					<p>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)<br>
+	대표: 레지널드 숀 톰프슨<br>
+	이메일 주소: korea@netflix.com<br>
+	주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161<br>
+	사업자등록번호: 165-87-00119<br>
+	클라우드 호스팅: Amazon Web Services Inc.<br>
+						<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119">공정거래위원회 웹사이트</a>
+		</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

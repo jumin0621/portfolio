@@ -10,8 +10,8 @@
 		<!-- HERO -->
 		<header class="hero">
 			<p class="hero-role">Front-end Developer</p>
-			<h1 class="hero-title">INTRODUCTION</h1>
-			<p class="hero-name">Shin ju-min</p>
+			<p class="hero-title">INTRODUCTION</p>
+			<h1 class="hero-name">Shin ju-min</h1>
 		</header>
 
 		<!-- HERO IMAGES -->
@@ -38,16 +38,18 @@
 			<div>
 				<h3>프론트엔드 전향 이유</h3>
 				<p>
-					기존에는 백엔드 개발자로서 데이터 처리와 비즈니스 구조를 담당했습니다.
-					사용자 경험을 직접 만드는 과정에 더 큰 흥미를 느끼게 되었습니다.
+					기존에는 백엔드 개발자로서 데이터 처리와 비즈니스 로직을 주로
+					담당했습니다. 보여지는 화면을 직접 만들고 눈에 보이는 결과에 더 큰
+					성취감을 느껴 프론트에 흥미를 가지게 되었습니다.
 				</p>
 			</div>
 
 			<div>
 				<h3>내가 생각하는 프론트엔드</h3>
 				<p>
-					단순 UI 구현을 넘어 서비스 구조를 이해한 상태에서 AI를 적극 활용해
-					현실적인 해결책을 제안하는 역할을 목표로 하고 있습니다.
+					프론트엔드는 UI를 그리는 작업이 아니라, 서비스의 구조와 데이터 흐름을
+					고려해 사용자가 불편함 없이 이용할 수 있도록 조율하는 역할이라고
+					생각합니다.
 				</p>
 			</div>
 
@@ -55,12 +57,12 @@
 				<h3>보유 스킬</h3>
 				<p>
 					HTML, CSS, JavaScript, React, Bootstrap, TailwindCSS<br />
-					(Java, Oracle, MyBatis 이해 가능)
+					(Java, Oracle, PL/SQL, MVC구조 이해 가능)
 				</p>
 			</div>
 		</section>
 
-		<!-- SKILL -->
+		<!-- SKILL strip -->
 		<section class="skill-strip">
 			<span><img src="images/html.png" /></span>
 			<span><img src="images/css.png" /></span>
@@ -68,21 +70,18 @@
 			<span><img src="images/react.png" /></span>
 			<span><img src="images/bootstrap.png" /></span>
 			<span><img src="images/tailwind.png" /></span>
-			<span><img src="images/java.png" /></span>
-			<span><img src="images/oracle.png" /></span>
-			<span><img src="images/mybatis.png" /></span>
 		</section>
 
 		<!-- ABOUT -->
 		<section class="about">
 			<blockquote>“Design and code evolve together.”</blockquote>
 			<p>
-				백엔드 경험을 바탕으로 API와 데이터 흐름을 이해하고, 사용성과
+				백엔드 개발 경험을 바탕으로 API와 데이터 흐름을 이해하고, 사용성과
 				유지보수성을 고려한 프론트엔드 구현을 지향합니다.
 			</p>
 			<p>
-				인터랙션 하나부터 일관된 UI 규칙, 접근성까지 고려하며 AI를 적극 활용해
-				빠르고 완성도 높은 개발을 목표로 합니다.
+				인터랙션 하나부터 일관된 UI 규칙, 접근성까지 고려한 개발을 중요시 하며
+				AI를 적극 활용해 빠르고 완성도 높은 개발을 목표로 합니다.
 			</p>
 		</section>
 
@@ -90,43 +89,156 @@
 		<section class="portfolio">
 			<h2>Portfolio</h2>
 			<div class="portfolio-grid">
-				<a
-					href="https://codepen.io/yramchpe-the-styleful/pen/raeQNzG"
-					target="_blank"
-					rel="noopener noreferrer"
-					><img src="images/port01.png" alt="첫번째 포트폴리오"
-				/></a>
-				<a
-					href="https://jumin0621.github.io/portfolio/"
-					target="_blank"
-					rel="noopener noreferrer"
-					><img src="images/port02.png" alt="두번째 포트폴리오"
-				/></a>
-				<a
-					href="https://codepen.io/yramchpe-the-styleful/pen/gbrjOGg"
-					target="_blank"
-					rel="noopener noreferrer"
-					><img src="images/port03.png" alt="세번째 포트폴리오"
-				/></a>
-				<a
-					href="https://codepen.io/yramchpe-the-styleful/pen/dPMgvwO"
-					target="_blank"
-					rel="noopener noreferrer"
-					><img src="images/port04.png" alt="네번째 포트폴리오"
-				/></a>
-			</div>
+
+				<!-- 포폴 1 -->
+				<input type="checkbox" id="pf-1" class="pf-toggle">
+				<label for="pf-1" class="portfolio-card">
+					<div class="card-front">
+						<img src="images/port01.png" alt="첫번째 포트폴리오"
+						/>
+					</div>
+					<div class="card-back">
+						<span class="card-badge">개인프로젝트</span>
+						<div class="card-content">
+							<h3>넷플릭스 페이지 모작</h3>
+
+							<p class="card-desc">
+								HTML과 CSS만으로 구현한 넷플릭스 홈페이지 모작입니다. 
+								최대한 넷플릭스와 비슷한 느낌을 내기 위하여 크롬의 개발자도구를 적극 활용하여 만들었습니다.
+							</p>
+
+							<ul class="card-meta">
+								<li>HTML5 · CSS3</li>
+								<li>Responsive Layout</li>
+								<li>codepen · chrome</li>
+							</ul>
+
+							<a
+								href="https://codepen.io/yramchpe-the-styleful/pen/raeQNzG"
+								class="card-link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								보러가기 →
+							</a>
+						</div>
+					</div>
+				</label>
+		
+				<!-- 포폴 2 -->
+				<input type="checkbox" id="pf-2" class="pf-toggle">
+				<label for="pf-2" class="portfolio-card">
+					<div class="card-front">
+						<img src="images/port02.png" alt="두번째 포트폴리오"
+						/>
+					</div>
+					<div class="card-back">
+						<span class="card-badge">개인프로젝트</span>
+						<div class="card-content">
+							<h3>자기소개 페이지</h3>
+
+							<p class="card-desc">
+								HTML과 CSS만으로 구현한 자기소개 페이지로, 로프론트엔드 전향 후 처음으로 완성한 개인 프로젝트입니다.
+							</p>
+
+							<ul class="card-meta">
+								<li>HTML5 · CSS3</li>
+								<li>Responsive Layout</li>
+								<li>figma · vscode · github</li>
+							</ul>
+
+							<a
+								href="https://jumin0621.github.io/portfolio"
+								class="card-link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								보러가기 →
+							</a>
+						</div>
+					</div>
+				</label>
+
+				<!-- 포폴 3 -->
+				<input type="checkbox" id="pf-3" class="pf-toggle">
+				<label for="pf-3" class="portfolio-card">
+					<div class="card-front">
+						<img src="images/port03.png" alt="세번째 포트폴리오"
+						/>
+					</div>
+					<div class="card-back">
+						<span class="card-badge">개인프로젝트</span>
+						<div class="card-content">
+							<h3>카드뒤집기</h3>
+
+							<p class="card-desc">
+								HTML과 CSS만으로 구현한 카드뒤집기 입니다. 앞/뒤를 체크박스로 구분한 것이
+								JS를 사용하지 않고 구현할 수 있는 키포인트입니다.
+							</p>
+
+							<ul class="card-meta">
+								<li>HTML5 · CSS3</li>
+								<li>Desktop First</li>
+								<li>codepen</li>
+							</ul>
+
+							<a
+								href="https://codepen.io/yramchpe-the-styleful/pen/gbrjOGg"
+								class="card-link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								보러가기 →
+							</a>
+						</div>
+					</div>
+				</label>
+
+				<!-- 포폴 4 -->
+				<input type="checkbox" id="pf-4" class="pf-toggle">
+				<label for="pf-4" class="portfolio-card">
+					<div class="card-front">
+						<img src="images/port04.png" alt="네번째 포트폴리오"
+					/>
+					</div>
+					<div class="card-back card-back--coming">
+						<span class="coming-text">준비중</span>
+					</div>
+				</label>
 		</section>
 
 		<!-- CONTACT -->
 		<footer class="contact">
 			<h2>contact</h2>
 			<div class="contact-icons">
-				<a href="#" aria-label="email"><img src="images/email.png" /></a>
-				<a href="#" aria-label="blog"><img src="images/blog.png" /></a>
-				<a href="#" aria-label="instagram"
-					><img src="images/instagram.png"
+				<a
+					href="mailto:10042220@naver.com"
+					aria-label="email"
+					target="_blank"
+					rel="noopener noreferrer"
+					><img src="images/email.png" alt="10042220@naver.com"
 				/></a>
-				<a href="#" aria-label="youtube"><img src="images/youtube.png" /></a>
+				<a
+					href="https://blog.naver.com/sj__story"
+					aria-label="blog"
+					target="_blank"
+					rel="noopener noreferrer"
+					><img src="images/blog.png" alt="blog.naver.com/sj__story"
+				/></a>
+				<a
+					href="https://instagram.com/jumin0621"
+					aria-label="instagram"
+					target="_blank"
+					rel="noopener noreferrer"
+					><img src="images/instagram.png" alt="instagram.com/jumin0621"
+				/></a>
+				<a
+					href="https://youtube.com/@sj_gameover"
+					aria-label="youtube"
+					target="_blank"
+					rel="noopener noreferrer"
+					><img src="images/youtube.png" alt="youtube.com/@sj_gameover"
+				/></a>
 			</div>
 		</footer>
 	</body>

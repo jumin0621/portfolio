@@ -19,22 +19,34 @@ body {
 ===================== */
 .hero {
 	text-align: center;
-	padding: 48px 20px;
+	padding: 20px 0;
 }
 
 .hero-role {
-	font-size: 14px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 17px;
+	padding: 10px 0;
 	letter-spacing: 0.12em;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
 }
 
 .hero-title {
-	font-size: 72px;
+	font-size: 70px;
 	font-weight: 600;
+	font-family: "Playfair Display", serif;
 	color: #4f6b55;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .hero-name {
+	margin-bottom: -30px;
+	transform: translateY(-50%);
 	font-size: 24px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #111;
+	opacity: 0.8;
 }
 
 /* =====================
@@ -42,9 +54,9 @@ body {
 ===================== */
 .hero-images {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 300px 420px 300px;
 	align-items: start;
-	gap: 24px;
+	column-gap: 24px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
@@ -55,20 +67,21 @@ body {
 	display: block;
 }
 
-.hero-image--left,
-.hero-image--right {
-	width: 353px;
-	height: 658px;
+.hero-image--center {
+	width: 420px;
+	height: 560px;
 	display: block;
 	object-fit: cover;
-	transform: translateY(calc((756px - 658px) / 2));
 }
 
-.hero-image--center {
-	width: 504px;
-	height: 756px;
+.hero-image--left,
+.hero-image--right {
+	width: 300px;
+	height: 500px;
 	display: block;
 	object-fit: cover;
+	transform: translateY(calc((560px - 500px) / 2));
+	transition: transform 0.4s ease;
 }
 
 /* =====================
@@ -87,43 +100,60 @@ body {
 	margin-bottom: 10px;
 }
 
+.intro-text p {
+	font-size: 14px;
+	line-height: 1.7;
+	opacity: 0.9;
+}
+
 /* =====================
    SKILL
 ===================== */
 .skill-strip {
 	display: flex;
 	justify-content: center;
-	gap: 24px;
+	gap: 106px;
 	padding: 28px 20px;
 	border-top: 1px solid #111;
 	border-bottom: 1px solid #111;
+}
+
+.skill-strip img {
+	width: 70px;
+	height: 70px;
 }
 
 /* =====================
    ABOUT
 ===================== */
 .about {
-	max-width: 720px;
+	max-width: 768px;
 	margin: 0 auto;
-	padding: 96px 20px;
+	padding: 64px 20px;
 }
 
 .about blockquote {
-	font-size: 22px;
+	text-align: center;
+	font-size: 40px;
 	margin-bottom: 28px;
+}
+
+.about p {
+	padding-bottom: 10px;
+	font-size: 20px;
 }
 
 /* =====================
    PORTFOLIO
 ===================== */
 .portfolio {
-	padding: 96px 20px;
-	text-align: center;
+	padding: 32px 20px;
 }
 
 .portfolio h2 {
-	font-size: 32px;
+	font-size: 50px;
 	margin-bottom: 48px;
+	text-align: center;
 }
 
 .portfolio-grid {
@@ -134,9 +164,122 @@ body {
 	margin: 0 auto;
 }
 
-.portfolio-grid img {
+.pf-toggle {
+	display: none;
+}
+
+.portfolio-card {
+	position: relative;
+	aspect-ratio: 3 / 4;
+	cursor: pointer;
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+	transform: scale(1.04);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+	inset: 0;
+	transition: opacity 0.35s ease;
+}
+
+.card-front img {
 	width: 100%;
-	display: block;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-back {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.78);
+	color: #fff;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.pf-toggle:checked + .portfolio-card .card-back {
+	opacity: 1;
+}
+
+.pf-toggle:checked + .portfolio-card .card-front {
+	opacity: 0.6;
+}
+
+.card-badge {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 12px;
+	padding: 4px 10px;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.15);
+	margin-bottom: 10px;
+	width: fit-content;
+}
+
+.card-back h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.card-desc {
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 14px;
+	opacity: 0.9;
+}
+
+.card-meta {
+	font-size: 13px;
+	opacity: 0.8;
+	padding-bottom: 16px;
+	list-style: none;
+}
+
+.card-meta li {
+	margin-bottom: 4px;
+}
+
+.card-link {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.card-content {
+	display: flex;
+	padding-top: 30px;
+	flex-direction: column;
+	height: 100%;
+}
+
+.card-back--coming {
+	position: relative;
+	background: rgba(0, 0, 0, 0.78);
+}
+
+/* 준비중 */
+.coming-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 18px;
+	letter-spacing: 0.15em;
+	opacity: 0.85;
 }
 
 /* =====================
@@ -144,19 +287,20 @@ body {
 ===================== */
 .contact {
 	text-align: center;
-	padding: 96px 20px 140px;
+	padding: 500px 20px 140px;
 }
 
 .contact-icons {
 	display: flex;
 	justify-content: center;
-	gap: 36px;
+	gap: 50px;
 	margin-top: 32px;
 }
 
 .contact-icons img {
 	width: 80px;
 	height: 80px;
+	opacity: 0.8;
 }
 
 /* =====================
@@ -167,16 +311,52 @@ body {
 		font-size: 56px;
 	}
 
+	.hero-role {
+		font-size: 16px;
+	}
+
 	.hero-images {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.hero-image--center {
+		width: 420px;
+		height: 560px;
+	}
+
+	.hero-image--right {
+		display: none;
+	}
+
+	.hero-image--left {
+		width: 420px;
+		height: 560px;
+		transform: translateY(0);
+	}
+
 	.intro-text {
 		grid-template-columns: repeat(2, 1fr);
+		padding-top: 32px;
+	}
+
+	.skill-strip {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		gap: 64px;
+	}
+
+	.skill-strip img {
+		width: 51px;
+		height: 51px;
 	}
 
 	.portfolio-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.portfolio-card:hover {
+		transform: none;
+		box-shadow: none;
 	}
 }
 
@@ -186,6 +366,11 @@ body {
 @media (max-width: 768px) {
 	.hero-title {
 		font-size: 40px;
+		text-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+	}
+
+	.hero-role {
+		font-size: 14px;
 	}
 
 	.hero-name {
@@ -198,8 +383,11 @@ body {
 
 	.hero-image--left,
 	.hero-image--right {
-		transform: none;
-		height: auto;
+		display: none;
+	}
+
+	.hero-image--center {
+		width: 100%;
 	}
 
 	.intro-text {
@@ -207,7 +395,30 @@ body {
 	}
 
 	.skill-strip {
-		flex-wrap: wrap;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		gap: 24px;
+	}
+
+	.skill-strip img {
+		width: 35px;
+		height: 35px;
+	}
+
+	.about {
+		margin: 0 auto;
+		padding: 64px 20px;
+	}
+
+	.about blockquote {
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 28px;
+	}
+
+	.about p {
+		padding-bottom: 10px;
+		font-size: 16px;
 	}
 
 	.portfolio-grid {

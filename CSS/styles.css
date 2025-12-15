@@ -171,7 +171,7 @@ body {
 .portfolio-card {
 	position: relative;
 	aspect-ratio: 3 / 4;
-	cursor: pointer;
+	cursor: default;
 	overflow: hidden;
 	transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -205,14 +205,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-}
-
-.pf-toggle:checked + .portfolio-card .card-back {
-	opacity: 1;
-}
-
-.pf-toggle:checked + .portfolio-card .card-front {
-	opacity: 0.6;
 }
 
 .card-badge {
@@ -265,21 +257,26 @@ body {
 	height: 100%;
 }
 
-.card-back--coming {
-	position: relative;
-	background: rgba(0, 0, 0, 0.78);
-}
-
 /* 준비중 */
 .coming-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+	text-align: center;
 	font-size: 18px;
 	letter-spacing: 0.15em;
 	opacity: 0.85;
+}
+
+.card-front--coming {
+	background: rgba(0, 0, 0, 0.78);
+	color: #fff;
+}
+
+.card-back--coming {
+	position: relative;
+	background: rgba(0, 0, 0, 1);
 }
 
 /* =====================
@@ -423,5 +420,39 @@ body {
 
 	.portfolio-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+/* =====================
+   포폴 PC- hover
+===================== */
+@media (hover: hover) {
+	.pf-toggle {
+		pointer-events: none;
+	}
+
+	.portfolio-card:hover .card-back {
+		opacity: 1;
+	}
+
+	.portfolio-card:hover .card-front {
+		opacity: 0.6;
+	}
+}
+
+/* =====================
+   포폴 모바일- click
+===================== */
+@media (hover: none) {
+	.pf-toggle {
+		pointer-events: auto;
+	}
+
+	.pf-toggle:checked + .portfolio-card .card-back {
+		opacity: 1;
+	}
+
+	.pf-toggle:checked + .portfolio-card .card-front {
+		opacity: 0.6;
 	}
 }

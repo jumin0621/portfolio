@@ -355,6 +355,12 @@ body {
 		transform: none;
 		box-shadow: none;
 	}
+
+	.contact-icons img {
+		width: 50px;
+		height: 50px;
+		opacity: 0.8;
+	}
 }
 
 /* =====================
@@ -421,10 +427,16 @@ body {
 	.portfolio-grid {
 		grid-template-columns: 1fr;
 	}
+
+	.contact-icons img {
+		width: 35px;
+		height: 35px;
+		opacity: 0.8;
+	}
 }
 
 /* =====================
-   포폴 PC- hover
+   포폴 PC hover
 ===================== */
 @media (hover: hover) {
 	.pf-toggle {
@@ -441,7 +453,7 @@ body {
 }
 
 /* =====================
-   포폴 모바일- click
+   포폴 모바일 click
 ===================== */
 @media (hover: none) {
 	.pf-toggle {

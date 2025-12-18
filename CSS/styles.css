@@ -123,6 +123,33 @@ body {
 	height: 70px;
 }
 
+.cert-section {
+	margin-top: 16px;
+}
+
+.cert-label {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 8px;
+}
+
+.cert-badges {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.badge-cert {
+	padding: 4px 10px;
+	font-size: 12px;
+	cursor: default;
+	border-radius: 12px;
+	background: #f0f0f0;
+	color: #333;
+	border: 1px solid #e0dbd2;
+}
+
 /* =====================
    ABOUT
 ===================== */

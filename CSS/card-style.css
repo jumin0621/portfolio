@@ -121,6 +121,13 @@ body {
 	text-align: center;
 }
 
+/* 조커를 찾았을 때 카드가 살짝 흔들리는 효과 */
+.card.joker-found .card-inner {
+	transform: rotateY(180deg);
+	outline: 3px solid #ffcc00; /* 황금색 테두리 */
+	box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+}
+
 .img01 {
 	background: url("https://cdn.ipnn.co.kr/news/photo/202311/408283_55343_1558.jpg")
 		no-repeat center / cover;

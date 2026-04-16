@@ -61,6 +61,26 @@ document.addEventListener("keydown", (e) => {
 	if (e.keyCode == 38) changeDirection("UP");
 	if (e.keyCode == 39) changeDirection("RIGHT");
 	if (e.keyCode == 40) changeDirection("DOWN");
+
+	window.addEventListener(
+		"keydown",
+		(e) => {
+			// 방지하고 싶은 키들의 키코드를 배열에 담습니다.
+			const preventKeys = [
+				"ArrowUp",
+				"ArrowDown",
+				"ArrowLeft",
+				"ArrowRight",
+				" ",
+			]; // 상, 하, 좌, 우, 스페이스바
+
+			if (preventKeys.includes(e.key)) {
+				// 해당 키가 눌렸을 때 브라우저의 기본 스크롤 동작을 막습니다.
+				e.preventDefault();
+			}
+		},
+		{ passive: false },
+	);
 });
 
 // 버튼 이벤트 (터치 및 클릭)

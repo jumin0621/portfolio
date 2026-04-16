@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="./snake.css" />
+	</head>
+	<body>
+		<div id="game-container">
+			<div id="score-board">LINES_COMPILED: <span id="score">0</span></div>
+			<canvas id="snakeGame" width="440" height="440"></canvas>
+
+			<div id="pc-instruction">
+				언어: <span style="color: #fbbf24">JS</span> | 방향키(Arrow Keys)로
+				조작하세요
+			</div>
+
+			<div id="controls">
+				<div class="btn" id="up">▲</div>
+				<div class="btn" id="left">◀</div>
+				<div class="btn" id="down">▼</div>
+				<div class="btn" id="right">▶</div>
+			</div>
+
+			<button id="restart-btn">[ RECOMPILE ]</button>
+		</div>
+		<script src="./snake.js"></script>
+	</body>
+</html>

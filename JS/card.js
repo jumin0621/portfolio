@@ -86,13 +86,15 @@ document.addEventListener("DOMContentLoaded", () => {
 				finishGame();
 			}
 		} else {
+			// 불일치할 때 (잠시 후 다시 뒤집기)
 			document.body.style.pointerEvents = "none";
+
 			setTimeout(() => {
 				card1.querySelector("input").checked = false;
 				card2.querySelector("input").checked = false;
 				flippedCards = [];
 				document.body.style.pointerEvents = "auto";
-			}, 1000);
+			}, 500);
 		}
 	}
 

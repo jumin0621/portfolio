@@ -129,38 +129,30 @@ body {
 }
 
 .img01 {
-	background: url("https://cdn.ipnn.co.kr/news/photo/202311/408283_55343_1558.jpg")
-		no-repeat center / cover;
+	background: url("../images/card/apple.png") no-repeat center / cover;
 }
 .img02 {
-	background: url("https://img.tf.co.kr/article/home/2016/04/07/201694261459981066.jpg")
-		no-repeat center / cover;
+	background: url("../images/card/gam.png") no-repeat center / cover;
 }
 .img03 {
-	background: url("https://i.namu.wiki/i/MV7ACLJRqjO3Er4MZ9fTCjeUjPBCNGOow5EUBanEkxEvsr8qnlX5AjLoxtTM0pjwRSmjKuc5yRSqv68BTGmEyg.webp")
-		no-repeat center / cover;
+	background: url("../images/card/kiwi.png") no-repeat center / cover;
 }
 .img04 {
-	background: url("https://i.namu.wiki/i/ukNDH_XQ6QCbUO7vO_d5Q4smcjOrRhZYS-PV-5MOzUfkYMKhitn3DxX-9kHQtqmemqfRzAbrbMfcpgKBtNi7JQ.webp")
-		no-repeat center / cover;
+	background: url("../images/card/orange.png") no-repeat center / cover;
 }
 
 .img05 {
-	background: url("https://cdn.gamemeca.com/gmdb/g000/61/45/223303.jpg")
-		no-repeat center / cover;
+	background: url("../images/card/pair.png") no-repeat center / cover;
 }
 .img06 {
-	background: url("https://appdata.hungryapp.co.kr/data_file/data_img/201603/30/W14593403267170129.png")
-		no-repeat center / cover;
+	background: url("../images/card/peach.png") no-repeat center / cover;
 }
 .img07 {
-	background: url("https://theviewers.co.kr/Files/30/News/202312/6456_20231228103015699.JPG")
-		no-repeat center / cover;
+	background: url("../images/card/watermelon.png") no-repeat center / cover;
 }
 
 .img00 {
-	background: url("https://i.pinimg.com/564x/6d/e5/3c/6de53c302c3bc644fcb598a1ac80817d.jpg")
-		no-repeat center / cover;
+	background: url("../images/card/joker.jpg") no-repeat center / cover;
 }
 
 @media (max-width: 768px) {

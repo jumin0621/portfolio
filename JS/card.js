@@ -6,9 +6,41 @@ document.addEventListener("DOMContentLoaded", () => {
 	let matchedCount = 0;
 	const TOTAL_PAIRS = 7;
 
-	// --- 1. 셔플 및 초기화 로직 ---
+	// 타이머 관련 변수
+	let timeLeft = 60; // 제한 시간 60초
+	let timerInterval = null;
+	let isGameStarted = false;
+
+	// 타이머 UI 생성 (HTML에 미리 만들어둬도 되고, JS로 삽입해도 됩니다)
+	const timerDisplay = document.createElement("div");
+	timerDisplay.id = "timer";
+	timerDisplay.style =
+		"font-size: 20px; font-weight: bold; color: red; margin-bottom: 10px;";
+	timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
+	document.querySelector(".game-header").appendChild(timerDisplay);
+
+	function startTimer() {
+		if (isGameStarted) return;
+		isGameStarted = true;
+
+		timerInterval = setInterval(() => {
+			timeLeft--;
+			timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
+
+			if (timeLeft <= 0) {
+				clearInterval(timerInterval);
+				alert("⏰ 시간 초과! 다시 도전해 보세요.");
+				resetGame();
+			}
+		}, 1000);
+	}
+
 	function resetGame() {
-		// 1. 모든 상태 초기화
+		clearInterval(timerInterval);
+		timeLeft = 60;
+		isGameStarted = false;
+		timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
+
 		matchedCount = 0;
 		flippedCards = [];
 
@@ -19,54 +51,45 @@ document.addEventListener("DOMContentLoaded", () => {
 			input.disabled = false;
 		});
 
-		// 2. 피셔-예이츠 셔플
 		for (let i = cardsArray.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[cardsArray[i], cardsArray[j]] = [cardsArray[j], cardsArray[i]];
 		}
-
-		// 3. 화면 재배치
 		cardsArray.forEach((card) => container.appendChild(card));
 	}
 
-	// --- 2. 카드 클릭 이벤트 ---
 	function initGame() {
-		resetGame(); // 시작할 때 리셋(셔플) 호출
-
+		resetGame();
 		cardsArray.forEach((card) => {
 			const checkbox = card.querySelector('input[type="checkbox"]');
 			checkbox.addEventListener("change", () => {
+				// 첫 카드를 뒤집는 순간 타이머 시작
+				if (!isGameStarted) startTimer();
+
 				if (
 					card.classList.contains("matched") ||
 					card.classList.contains("joker-found")
 				)
 					return;
-
 				if (checkbox.checked) {
 					const imgClass = card.querySelector(".card-image-slot").classList[1];
-
 					if (imgClass === "img00") {
 						handleJoker(card);
 						return;
 					}
-
 					flippedCards.push(card);
-					if (flippedCards.length === 2) {
-						checkMatch();
-					}
+					if (flippedCards.length === 2) checkMatch();
 				}
 			});
 		});
 	}
 
-	// --- 3. 조커 처리 ---
 	function handleJoker(card) {
 		card.classList.add("joker-found");
 		card.querySelector("input").disabled = true;
 		setTimeout(() => alert("🃏 조커를 찾으셨습니다!"), 300);
 	}
 
-	// --- 4. 매칭 체크 ---
 	function checkMatch() {
 		const [card1, card2] = flippedCards;
 		const img1 = card1.querySelector(".card-image-slot").classList[1];
@@ -77,18 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			card2.classList.add("matched");
 			card1.querySelector("input").disabled = true;
 			card2.querySelector("input").disabled = true;
-
 			matchedCount++;
 			flippedCards = [];
-
-			// [게임 종료 체크]
-			if (matchedCount === TOTAL_PAIRS) {
-				finishGame();
-			}
+			if (matchedCount === TOTAL_PAIRS) finishGame();
 		} else {
-			// 불일치할 때 (잠시 후 다시 뒤집기)
 			document.body.style.pointerEvents = "none";
-
 			setTimeout(() => {
 				card1.querySelector("input").checked = false;
 				card2.querySelector("input").checked = false;
@@ -98,21 +114,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
-	// --- 5. 게임 종료 처리 ---
 	function finishGame() {
-		// 만약 조커가 아직 안 뒤집혔다면? 강제로 뒤집기
+		clearInterval(timerInterval); // 타이머 멈춤
+		const timeTaken = 60 - timeLeft; // 소요 시간 계산
+
 		const jokerCard = cardsArray.find((card) =>
 			card.querySelector(".card-image-slot").classList.contains("img00"),
 		);
-
 		if (!jokerCard.classList.contains("joker-found")) {
 			jokerCard.querySelector("input").checked = true;
 			jokerCard.classList.add("joker-found");
 		}
 
 		setTimeout(() => {
-			alert("🎉 모든 짝을 찾으셨습니다! 확인을 누르면 다시 시작합니다.");
-			resetGame(); // 확인 버튼 누르면 초기화 및 재셔플
+			alert(
+				`🎉 성공! 모든 짝을 찾았습니다.\n⏱ 소요 시간: ${timeTaken}초\n확인을 누르면 재시작합니다.`,
+			);
+			resetGame();
 		}, 500);
 	}
 

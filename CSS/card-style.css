@@ -152,7 +152,7 @@ body {
 }
 
 .img00 {
-	background: url("../images/card/joker.jpg") no-repeat center / cover;
+	background: url("../images/card/joker.png") no-repeat center / cover;
 }
 
 @media (max-width: 768px) {
